@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+}
+
+#wrap {    
+    /* background-color: #fff9e2; */
+    /* background-color: #15a775; */
+    margin: 0 auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+.inner {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 14px;
+}
+
+.title h3 {
+    font-size: 22px;
+}
+
+.header {
+    height: 70px;
+}
+
+.header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner h1 a img {
+    height: 50px;
+    object-fit: cover;
+}
+
+.header .inner .menu_open img {
+    height: 40px;
+    object-fit: cover;
+}
+
+#main {
+    /* background: url(../img/bg_pattern_새미네부엌.png) 0 0 / auto cover no-repeat; */
+}
+
+.main_visual {
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.main_visual::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff6d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main_visual figure {
+    height: 100%;
+}
+
+.main_visual figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_visual div {
+    /* width: 312px; */
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main_visual div h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.main_visual div p {
+    
+}
+
+.cont01 {
+    margin: 60px 0;
+}
+
+.cont01 .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* flex-direction column -> 그냥 세로로 나열 */
+}
+
+.cont01 .list .item {
+    /* width: 172px; */
+    /* width: 49%; */
+    width: calc(100% / 2 - 7px);
+    margin-bottom: 20px;
+}
+
+.cont01 .list .item figure {
+    width: 100%;
+    height: 172px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cont01 .list .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont01 .list .item div {
+    margin-top: 10px;
+}
+
+.cont01 .list .item div h4 {
+    /* font-size: 16px; 컴퓨터 폰트 기본값 16px */
+}
+
+.cont01 .list .item div p {
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 17px;
+}
+
+.cont02 {
+    padding: 60px 0px;
+    margin-bottom: 60px;
+    background-color: #fff9e2;
+    background-image: url(../img/bg_pattern_새미네부엌.png);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    border-radius: 20px;
+   /*  background: url(../img/bg_pattern_새미네부엌.png) 50% 50% / cover no-repeat; */
+}
+
+.cont02 .item figure {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.cont02 .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont02 .item .info {
+    background-color: #fff;
+    width: 100%;
+    /* height: 97px; */
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #c1c1c144;
+    border-left: 2px solid #c1c1c144;
+    border-right: 2px solid #c1c1c144;
+    padding: 18px 15px;
+    position: relative;
+}
+
+.cont02 .item .info p {
+    margin-bottom: 7px;
+    font-size: 11px;
+}
+
+.cont02 .item .info h4 {
+    margin-bottom: 16px
+}
+
+.cont02 .item .info div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 14px;
+}
+
+.cont02 .item .info div img {
+    height: 16px;
+    margin-right: 2px;
+}
+
+.cont02 .item .info div span {
+    font-size: 11px;
+}
+
+.cont03 {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+
+.cont03 .title {
+    text-align: center;
+}
+
+.cont03 .swiper-slide a figure { /* .swiper-slide에 overflow: hidden 하고 전체 영역 모서리 둥글게 잡아도 됨 */
+    width: 100%;
+    height: 257px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.cont03 .swiper-slide a figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont03 .swiper-slide .info {
+    background-color: #fff;
+    /* width: 281px; */
+    /* height: 97px; */
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #c1c1c144;
+    border-left: 2px solid #c1c1c144;
+    border-right: 2px solid #c1c1c144;
+    padding: 18px 15px;
+    position: relative;
+}
+
+.cont03 .swiper-slide .info p {
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.cont03 .swiper-slide .info h4 {
+    margin-bottom: 16px;
+}
+
+.cont03 .swiper-slide .info div img {
+    height: 13px;    
+}
+
+.swiper {
+    position: static;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 6px;
+    
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid #15a775;
+    background-color: #fff9e2;
+    vertical-align: middle;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #15a775;
+    width: 9px;
+    height: 9px;
+}
+
+.footer {
+    width: 100%;
+    height: 56px;
+    background-color: #15a77453;
+}
+
+.footer p {
+    text-align: center;
+    line-height: 56px;
+}
+
+/* 스크린 너비 641px 이상일 때 */
+@media screen and (min-width:641px) {
+    /* 실행코드 */
+    #wrap {
+        max-width: 100%;
+        background-color: #fff9e2;
+    }
+
+    .inner {
+        max-width: 1280px;
+        width: calc(100% - 30px); 
+    }
+
+    .cont01 .list .item {
+        width: calc(100% / 4 - 20px);
+    }
+
+}/* min 641px */
